@@ -8,7 +8,10 @@
 
 #import "ScoreKeeper.h"
 
-@implementation ScoreKeeper
+@implementation ScoreKeeper {
+    int right;
+    int wrong;
+}
 - (instancetype) init {
     if (self = [super init]) {
         right = 0;

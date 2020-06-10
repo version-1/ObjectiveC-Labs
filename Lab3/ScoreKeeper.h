@@ -11,10 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ScoreKeeper : NSObject
-{
-    int right;
-    int wrong;
-}
 - (float) rate;
 - (void) match;
 - (void) miss;

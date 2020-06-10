@@ -10,11 +10,6 @@
 #define AddingQuestion_h
 
 @interface AddingQuestion: NSObject
-{
-    int left;
-    int right;
-    int answer;
-}
 - (bool) inspect: (int) answer;
 - (int) genRandomNum;
 - (NSString*) generateRandomQuestion;

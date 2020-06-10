@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "AddingQuestion.h"
 
-@implementation AddingQuestion
+@implementation AddingQuestion {
+    int left;
+    int right;
+    int answer;
+}
 - (instancetype) init {
     if (self = [super init]) {
         [self generateRandomQuestion];
