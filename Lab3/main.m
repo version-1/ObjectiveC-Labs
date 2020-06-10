@@ -1,6 +1,6 @@
 //
 //  main.m
-//  ObjectiveC-Labs
+//  Lab3
 //
 //  Created by Administlator on 2020/06/10.
 //  Copyright © 2020 Administlator. All rights reserved.
