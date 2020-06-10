@@ -14,9 +14,13 @@
     float height;
     float width;
     float length;
+    NSMutableArray *fittedIn;
 }
 - (id) initWithFloats :(float)length :(float)height :(float)length;
-- (float) size;
+- (int) add: (float) volume;
+- (int) countInBox;
+- (float) contentVolume;
+- (float) volume;
 @end
 
 

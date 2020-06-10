@@ -11,12 +11,20 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Box *box = [[Box alloc] initWithFloats :100 :100 :100];
+        Box *box = [[Box alloc] initWithFloats :10 :10 :10];
         
+        Box *box1 = [[Box alloc] initWithFloats :5 :10 :10];
+        Box *box2 = [[Box alloc] initWithFloats :5 :10 :10];
+        Box *box3 = [[Box alloc] initWithFloats :5 :10 :10];
         
+        [box add:[box1 volume]];
+        [box add:[box2 volume]];
+        [box add:[box3 volume]];
         
         // insert code here...
-        NSLog(@"Volume is %d", [box size]);
+        NSLog(@"Volume is %f", [box volume]);
+        NSLog(@"Content Volume is %f", [box contentVolume]);
+        NSLog(@"size count is %d", [box countInBox]);
     }
     return 0;
 }
