@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AddingQuestion.h"
 
 NSString *getUserInput(int maxLength, NSString *prompt) {
     if (maxLength < 1) {
@@ -22,12 +23,18 @@ NSString *getUserInput(int maxLength, NSString *prompt) {
 }
 
 int main(int argc, const char * argv[]) {
+    NSLog(@"MATHS!");
+    AddingQuestion *q = [[AddingQuestion alloc] init];
     @autoreleasepool {
         while (1) {
-            NSString *option = getUserInput(10, @"User Input:");
-            
+            NSString *option = getUserInput(10, q.generateRandomQuestion);
             if (option == nil || [option isEqualToString: @"exit"]) {
                 break;
+            }
+            if ([q inspect: [option integerValue]]) {
+                NSLog(@"Right!");
+            } else {
+                NSLog(@"Wrong!");
             }
         }
     }

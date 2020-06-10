@@ -11,8 +11,15 @@
 
 @interface AddingQuestion: NSObject
 {
+    int left;
+    int right;
+    int answer;
 }
-- (int) generateRandomQuestion;
+- (bool) inspect: (int) answer;
+- (int) genRandomNum;
+- (NSString*) generateRandomQuestion;
+- (NSString*) toString;
+
 @end
 
 
