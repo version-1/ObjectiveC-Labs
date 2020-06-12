@@ -1,24 +1,24 @@
 //
-//  NSObject+PigLatin.m
+//  NSString+PigLatin.m
 //  Lab13
 //
 //  Created by Administlator on 2020/06/12.
 //  Copyright © 2020 Administlator. All rights reserved.
 //
 
-#import "NSObject+PigLatin.h"
+#import "NSString+PigLatin.h"
 
 @implementation NSString (PigLatin)
-- (NSString*) pigLatinization: (NSString*) str {
+- (NSString*) pigLatinization {
     int i;
     NSMutableString *consonant = [[NSMutableString alloc] init];
     NSArray *vowels = [NSArray arrayWithObjects:@"a",@"i",@"u",@"e",@"o", nil];
     
-    for (i = 0; i < str.length; i++) {
-        NSString *onechar = [str substringWithRange:NSMakeRange(i, 1)];
+    for (i = 0; i < self.length; i++) {
+        NSString *onechar = [self substringWithRange:NSMakeRange(i, 1)];
         
         if (i == 0 && [vowels containsObject: [onechar lowercaseString]]) {
-          return [NSString stringWithFormat:@"%@ay", str];
+          return [NSString stringWithFormat:@"%@ay", self];
         }
         
         if (![vowels containsObject: [onechar lowercaseString]]) {
@@ -27,16 +27,16 @@
             break;
         }
     }
-    NSString *rest = [str substringWithRange:NSMakeRange(i, str.length - 1)];
+    NSString *rest = [self substringWithRange:NSMakeRange(i, self.length - 1)];
     return  [NSString stringWithFormat:@"%@%@ay", rest, consonant];
 }
 
-- (NSString*) stringByPigLatinization: (NSString*) str {
-    NSArray *words = [str componentsSeparatedByString:@" "];
+- (NSString*) stringByPigLatinization {
+    NSArray *words = [self componentsSeparatedByString:@" "];
     NSMutableString *res = [[NSMutableString alloc] init];
     for (NSString* word in words) {
         [res appendString: @" "];
-        NSString* tmp = [NSString stringWithFormat: @"%@", [self pigLatinization :word]];
+        NSString* tmp = [NSString stringWithFormat: @"%@", [self pigLatinization]];
         [res appendString: tmp];
     }
     return res;

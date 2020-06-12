@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+PigLatin.h"
+#import "NSString+PigLatin.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSObject *obj = [[NSObject alloc] init];
-        NSLog(@"%@", [obj stringByPigLatinization :@"Hello World"]);
-        NSLog(@"%@", [obj stringByPigLatinization :@"Lorem ipsum"]);
+        NSLog(@"%@", [@"Hello World" stringByPigLatinization]);
+        NSLog(@"%@", [@"Lorem ipsum" stringByPigLatinization]);
     }
     return 0;
 }

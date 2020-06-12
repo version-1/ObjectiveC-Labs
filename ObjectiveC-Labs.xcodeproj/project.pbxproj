@@ -20,7 +20,7 @@
 		8492FFC92493C3CB003F1F0F /* FoodTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFC82493C3CB003F1F0F /* FoodTruck.m */; };
 		8492FFCC2493C43C003F1F0F /* Cook.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFCB2493C43C003F1F0F /* Cook.m */; };
 		8492FFD02493C96C003F1F0F /* CookB.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFCF2493C96C003F1F0F /* CookB.m */; };
-		8492FFD32493CF9A003F1F0F /* NSObject+PigLatin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFD22493CF9A003F1F0F /* NSObject+PigLatin.m */; };
+		8492FFD62493D52D003F1F0F /* NSString+PigLatin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFD52493D52D003F1F0F /* NSString+PigLatin.m */; };
 		849AA73A24914C5E008867FD /* AddingQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AA73924914C5E008867FD /* AddingQuestion.m */; };
 		849AA73D24915784008867FD /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AA73C24915784008867FD /* InputHandler.m */; };
 		849AA74124915A9B008867FD /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AA74024915A9B008867FD /* ScoreKeeper.m */; };
@@ -120,8 +120,8 @@
 		8492FFCB2493C43C003F1F0F /* Cook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cook.m; sourceTree = "<group>"; };
 		8492FFCE2493C96C003F1F0F /* CookB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CookB.h; sourceTree = "<group>"; };
 		8492FFCF2493C96C003F1F0F /* CookB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookB.m; sourceTree = "<group>"; };
-		8492FFD12493CF9A003F1F0F /* NSObject+PigLatin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PigLatin.h"; sourceTree = "<group>"; };
-		8492FFD22493CF9A003F1F0F /* NSObject+PigLatin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PigLatin.m"; sourceTree = "<group>"; };
+		8492FFD42493D52D003F1F0F /* NSString+PigLatin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PigLatin.h"; sourceTree = "<group>"; };
+		8492FFD52493D52D003F1F0F /* NSString+PigLatin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PigLatin.m"; sourceTree = "<group>"; };
 		849AA73924914C5E008867FD /* AddingQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddingQuestion.m; sourceTree = "<group>"; };
 		849AA73B24914C6B008867FD /* AddingQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddingQuestion.h; sourceTree = "<group>"; };
 		849AA73C24915784008867FD /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
@@ -246,8 +246,8 @@
 			isa = PBXGroup;
 			children = (
 				8492FF9924926A36003F1F0F /* main.m */,
-				8492FFD12493CF9A003F1F0F /* NSObject+PigLatin.h */,
-				8492FFD22493CF9A003F1F0F /* NSObject+PigLatin.m */,
+				8492FFD42493D52D003F1F0F /* NSString+PigLatin.h */,
+				8492FFD52493D52D003F1F0F /* NSString+PigLatin.m */,
 			);
 			path = Lab13;
 			sourceTree = "<group>";
@@ -498,8 +498,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8492FFD62493D52D003F1F0F /* NSString+PigLatin.m in Sources */,
 				8492FF9A24926A36003F1F0F /* main.m in Sources */,
-				8492FFD32493CF9A003F1F0F /* NSObject+PigLatin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
