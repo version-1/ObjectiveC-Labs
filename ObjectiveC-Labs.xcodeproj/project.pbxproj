@@ -16,6 +16,10 @@
 		8492FFAB24928140003F1F0F /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFAA24928140003F1F0F /* ScoreKeeper.m */; };
 		8492FFAE24928152003F1F0F /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFAD24928152003F1F0F /* InputHandler.m */; };
 		8492FFB124928165003F1F0F /* AddingQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFB024928165003F1F0F /* AddingQuestion.m */; };
+		8492FFBF2493BFA9003F1F0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFBE2493BFA9003F1F0F /* main.m */; };
+		8492FFC92493C3CB003F1F0F /* FoodTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFC82493C3CB003F1F0F /* FoodTruck.m */; };
+		8492FFCC2493C43C003F1F0F /* Cook.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFCB2493C43C003F1F0F /* Cook.m */; };
+		8492FFD02493C96C003F1F0F /* CookB.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFCF2493C96C003F1F0F /* CookB.m */; };
 		849AA73A24914C5E008867FD /* AddingQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AA73924914C5E008867FD /* AddingQuestion.m */; };
 		849AA73D24915784008867FD /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AA73C24915784008867FD /* InputHandler.m */; };
 		849AA74124915A9B008867FD /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AA74024915A9B008867FD /* ScoreKeeper.m */; };
@@ -76,6 +80,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		8492FFBA2493BFA9003F1F0F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +111,14 @@
 		8492FFAD24928152003F1F0F /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		8492FFAF24928165003F1F0F /* AddingQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddingQuestion.h; sourceTree = "<group>"; };
 		8492FFB024928165003F1F0F /* AddingQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddingQuestion.m; sourceTree = "<group>"; };
+		8492FFBC2493BFA9003F1F0F /* Lab9 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab9; sourceTree = BUILT_PRODUCTS_DIR; };
+		8492FFBE2493BFA9003F1F0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8492FFC72493C3CB003F1F0F /* FoodTruck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodTruck.h; sourceTree = "<group>"; };
+		8492FFC82493C3CB003F1F0F /* FoodTruck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodTruck.m; sourceTree = "<group>"; };
+		8492FFCA2493C43C003F1F0F /* Cook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cook.h; sourceTree = "<group>"; };
+		8492FFCB2493C43C003F1F0F /* Cook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cook.m; sourceTree = "<group>"; };
+		8492FFCE2493C96C003F1F0F /* CookB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CookB.h; sourceTree = "<group>"; };
+		8492FFCF2493C96C003F1F0F /* CookB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookB.m; sourceTree = "<group>"; };
 		849AA73924914C5E008867FD /* AddingQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddingQuestion.m; sourceTree = "<group>"; };
 		849AA73B24914C6B008867FD /* AddingQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddingQuestion.h; sourceTree = "<group>"; };
 		849AA73C24915784008867FD /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
@@ -149,6 +170,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8492FFB92493BFA9003F1F0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -160,6 +188,7 @@
 				84368E962491267F001DE432 /* Lab3 */,
 				8492FF9824926A36003F1F0F /* Lab13 */,
 				8492FFA3249280CC003F1F0F /* Lab5 */,
+				8492FFBD2493BFA9003F1F0F /* Lab9 */,
 				84368E6E2491232A001DE432 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -173,6 +202,7 @@
 				84368E952491267F001DE432 /* Lab3 */,
 				8492FF9724926A36003F1F0F /* Lab13 */,
 				8492FFA2249280CC003F1F0F /* Lab5 */,
+				8492FFBC2493BFA9003F1F0F /* Lab9 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,6 +259,20 @@
 				8492FFAA24928140003F1F0F /* ScoreKeeper.m */,
 			);
 			path = Lab5;
+			sourceTree = "<group>";
+		};
+		8492FFBD2493BFA9003F1F0F /* Lab9 */ = {
+			isa = PBXGroup;
+			children = (
+				8492FFBE2493BFA9003F1F0F /* main.m */,
+				8492FFCA2493C43C003F1F0F /* Cook.h */,
+				8492FFCB2493C43C003F1F0F /* Cook.m */,
+				8492FFCE2493C96C003F1F0F /* CookB.h */,
+				8492FFCF2493C96C003F1F0F /* CookB.m */,
+				8492FFC72493C3CB003F1F0F /* FoodTruck.h */,
+				8492FFC82493C3CB003F1F0F /* FoodTruck.m */,
+			);
+			path = Lab9;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +380,23 @@
 			productReference = 8492FFA2249280CC003F1F0F /* Lab5 */;
 			productType = "com.apple.product-type.tool";
 		};
+		8492FFBB2493BFA9003F1F0F /* Lab9 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8492FFC22493BFA9003F1F0F /* Build configuration list for PBXNativeTarget "Lab9" */;
+			buildPhases = (
+				8492FFB82493BFA9003F1F0F /* Sources */,
+				8492FFB92493BFA9003F1F0F /* Frameworks */,
+				8492FFBA2493BFA9003F1F0F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab9;
+			productName = Lab9;
+			productReference = 8492FFBC2493BFA9003F1F0F /* Lab9 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -363,6 +424,9 @@
 					8492FFA1249280CC003F1F0F = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					8492FFBB2493BFA9003F1F0F = {
+						CreatedOnToolsVersion = 11.5;
+					};
 				};
 			};
 			buildConfigurationList = 84368E682491232A001DE432 /* Build configuration list for PBXProject "ObjectiveC-Labs" */;
@@ -384,6 +448,7 @@
 				84368E942491267F001DE432 /* Lab3 */,
 				8492FF9624926A36003F1F0F /* Lab13 */,
 				8492FFA1249280CC003F1F0F /* Lab5 */,
+				8492FFBB2493BFA9003F1F0F /* Lab9 */,
 			);
 		};
 /* End PBXProject section */
@@ -440,6 +505,17 @@
 				8492FFAE24928152003F1F0F /* InputHandler.m in Sources */,
 				8492FFB124928165003F1F0F /* AddingQuestion.m in Sources */,
 				8492FFA5249280CC003F1F0F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8492FFB82493BFA9003F1F0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8492FFD02493C96C003F1F0F /* CookB.m in Sources */,
+				8492FFBF2493BFA9003F1F0F /* main.m in Sources */,
+				8492FFC92493C3CB003F1F0F /* FoodTruck.m in Sources */,
+				8492FFCC2493C43C003F1F0F /* Cook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +751,26 @@
 			};
 			name = Release;
 		};
+		8492FFC02493BFA9003F1F0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P56BBK28XQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8492FFC12493BFA9003F1F0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P56BBK28XQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -737,6 +833,15 @@
 			buildConfigurations = (
 				8492FFA7249280CC003F1F0F /* Debug */,
 				8492FFA8249280CC003F1F0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8492FFC22493BFA9003F1F0F /* Build configuration list for PBXNativeTarget "Lab9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8492FFC02493BFA9003F1F0F /* Debug */,
+				8492FFC12493BFA9003F1F0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
