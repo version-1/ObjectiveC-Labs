@@ -25,6 +25,8 @@
 		8492FFE52493F5D1003F1F0F /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFE42493F5D1003F1F0F /* Question.m */; };
 		8492FFE82493F609003F1F0F /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFE72493F609003F1F0F /* QuestionFactory.m */; };
 		8492FFEB2493F639003F1F0F /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFEA2493F639003F1F0F /* QuestionManager.m */; };
+		8492FFEE249403EB003F1F0F /* MultipleQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFED249403EB003F1F0F /* MultipleQuestion.m */; };
+		8492FFF1249404BD003F1F0F /* DivisionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFF0249404BD003F1F0F /* DivisionQuestion.m */; };
 		849AA73A24914C5E008867FD /* AddingQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AA73924914C5E008867FD /* AddingQuestion.m */; };
 		849AA73D24915784008867FD /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AA73C24915784008867FD /* InputHandler.m */; };
 		849AA74124915A9B008867FD /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 849AA74024915A9B008867FD /* ScoreKeeper.m */; };
@@ -134,6 +136,10 @@
 		8492FFE72493F609003F1F0F /* QuestionFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionFactory.m; sourceTree = "<group>"; };
 		8492FFE92493F639003F1F0F /* QuestionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
 		8492FFEA2493F639003F1F0F /* QuestionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
+		8492FFEC249403AD003F1F0F /* MultipleQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleQuestion.h; sourceTree = "<group>"; };
+		8492FFED249403EB003F1F0F /* MultipleQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleQuestion.m; sourceTree = "<group>"; };
+		8492FFF0249404BD003F1F0F /* DivisionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DivisionQuestion.m; sourceTree = "<group>"; };
+		8492FFF22494050B003F1F0F /* DivisionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DivisionQuestion.h; sourceTree = "<group>"; };
 		849AA73924914C5E008867FD /* AddingQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddingQuestion.m; sourceTree = "<group>"; };
 		849AA73B24914C6B008867FD /* AddingQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddingQuestion.h; sourceTree = "<group>"; };
 		849AA73C24915784008867FD /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
@@ -273,9 +279,13 @@
 				8492FFA924928140003F1F0F /* ScoreKeeper.h */,
 				8492FFAA24928140003F1F0F /* ScoreKeeper.m */,
 				8492FFDD2493F569003F1F0F /* AdditionQuestion.h */,
+				8492FFEC249403AD003F1F0F /* MultipleQuestion.h */,
+				8492FFF22494050B003F1F0F /* DivisionQuestion.h */,
 				8492FFE62493F609003F1F0F /* QuestionFactory.h */,
 				8492FFE72493F609003F1F0F /* QuestionFactory.m */,
 				8492FFDE2493F569003F1F0F /* AdditionQuestion.m */,
+				8492FFED249403EB003F1F0F /* MultipleQuestion.m */,
+				8492FFF0249404BD003F1F0F /* DivisionQuestion.m */,
 				8492FFE32493F5D1003F1F0F /* Question.h */,
 				8492FFE92493F639003F1F0F /* QuestionManager.h */,
 				8492FFEA2493F639003F1F0F /* QuestionManager.m */,
@@ -527,7 +537,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8492FFF1249404BD003F1F0F /* DivisionQuestion.m in Sources */,
 				8492FFAB24928140003F1F0F /* ScoreKeeper.m in Sources */,
+				8492FFEE249403EB003F1F0F /* MultipleQuestion.m in Sources */,
 				8492FFDF2493F569003F1F0F /* AdditionQuestion.m in Sources */,
 				8492FFAE24928152003F1F0F /* InputHandler.m in Sources */,
 				8492FFE52493F5D1003F1F0F /* Question.m in Sources */,
