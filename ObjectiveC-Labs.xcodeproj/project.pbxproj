@@ -11,6 +11,13 @@
 		84368E8D2491265A001DE432 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84368E8C2491265A001DE432 /* main.m */; };
 		84368E9824912680001DE432 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84368E972491267F001DE432 /* main.m */; };
 		84368E9D24912832001DE432 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 84368E9C24912832001DE432 /* Box.m */; };
+		843F92EC2497AE7200053C9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F92EB2497AE7200053C9F /* main.m */; };
+		843F92F22497B2A700053C9F /* PaymentGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F92F12497B2A700053C9F /* PaymentGateway.m */; };
+		843F92F52497B38400053C9F /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F92F42497B38400053C9F /* StripePaymentService.m */; };
+		843F92F82497B39B00053C9F /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F92F72497B39B00053C9F /* AmazonPaymentService.m */; };
+		843F92FB2497B3B600053C9F /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F92FA2497B3B600053C9F /* PaypalPaymentService.m */; };
+		843F92FF2497B97F00053C9F /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F92FE2497B97F00053C9F /* InputHandler.m */; };
+		843F93022497BFB100053C9F /* ApplePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F93012497BFB100053C9F /* ApplePaymentService.m */; };
 		8492FF9A24926A36003F1F0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FF9924926A36003F1F0F /* main.m */; };
 		8492FFA5249280CC003F1F0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFA4249280CC003F1F0F /* main.m */; };
 		8492FFAB24928140003F1F0F /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFAA24928140003F1F0F /* ScoreKeeper.m */; };
@@ -69,6 +76,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		843F92E72497AE7200053C9F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		8492FF9524926A36003F1F0F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,6 +124,20 @@
 		84368E972491267F001DE432 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84368E9C24912832001DE432 /* Box.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
 		84368E9E24912B80001DE432 /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		843F92E92497AE7200053C9F /* Lab10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab10; sourceTree = BUILT_PRODUCTS_DIR; };
+		843F92EB2497AE7200053C9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		843F92F02497B2A700053C9F /* PaymentGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentGateway.h; sourceTree = "<group>"; };
+		843F92F12497B2A700053C9F /* PaymentGateway.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentGateway.m; sourceTree = "<group>"; };
+		843F92F32497B38400053C9F /* StripePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StripePaymentService.h; sourceTree = "<group>"; };
+		843F92F42497B38400053C9F /* StripePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StripePaymentService.m; sourceTree = "<group>"; };
+		843F92F62497B39B00053C9F /* AmazonPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
+		843F92F72497B39B00053C9F /* AmazonPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
+		843F92F92497B3B600053C9F /* PaypalPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaypalPaymentService.h; sourceTree = "<group>"; };
+		843F92FA2497B3B600053C9F /* PaypalPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaypalPaymentService.m; sourceTree = "<group>"; };
+		843F92FD2497B97F00053C9F /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		843F92FE2497B97F00053C9F /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		843F93002497BFB100053C9F /* ApplePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePaymentService.h; sourceTree = "<group>"; };
+		843F93012497BFB100053C9F /* ApplePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePaymentService.m; sourceTree = "<group>"; };
 		8492FF9724926A36003F1F0F /* Lab13 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab13; sourceTree = BUILT_PRODUCTS_DIR; };
 		8492FF9924926A36003F1F0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8492FFA2249280CC003F1F0F /* Lab5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab5; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +207,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		843F92E62497AE7200053C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8492FF9424926A36003F1F0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +247,7 @@
 				8492FF9824926A36003F1F0F /* Lab13 */,
 				8492FFA3249280CC003F1F0F /* Lab5 */,
 				8492FFBD2493BFA9003F1F0F /* Lab9 */,
+				843F92EA2497AE7200053C9F /* Lab10 */,
 				84368E6E2491232A001DE432 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -224,6 +262,7 @@
 				8492FF9724926A36003F1F0F /* Lab13 */,
 				8492FFA2249280CC003F1F0F /* Lab5 */,
 				8492FFBC2493BFA9003F1F0F /* Lab9 */,
+				843F92E92497AE7200053C9F /* Lab10 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,6 +297,26 @@
 				849AA73B24914C6B008867FD /* AddingQuestion.h */,
 			);
 			path = Lab3;
+			sourceTree = "<group>";
+		};
+		843F92EA2497AE7200053C9F /* Lab10 */ = {
+			isa = PBXGroup;
+			children = (
+				843F92EB2497AE7200053C9F /* main.m */,
+				843F92FD2497B97F00053C9F /* InputHandler.h */,
+				843F92FE2497B97F00053C9F /* InputHandler.m */,
+				843F92F02497B2A700053C9F /* PaymentGateway.h */,
+				843F92F12497B2A700053C9F /* PaymentGateway.m */,
+				843F92F32497B38400053C9F /* StripePaymentService.h */,
+				843F92F42497B38400053C9F /* StripePaymentService.m */,
+				843F92F62497B39B00053C9F /* AmazonPaymentService.h */,
+				843F92F92497B3B600053C9F /* PaypalPaymentService.h */,
+				843F92FA2497B3B600053C9F /* PaypalPaymentService.m */,
+				843F92F72497B39B00053C9F /* AmazonPaymentService.m */,
+				843F93002497BFB100053C9F /* ApplePaymentService.h */,
+				843F93012497BFB100053C9F /* ApplePaymentService.m */,
+			);
+			path = Lab10;
 			sourceTree = "<group>";
 		};
 		8492FF9824926A36003F1F0F /* Lab13 */ = {
@@ -381,6 +440,23 @@
 			productReference = 84368E952491267F001DE432 /* Lab3 */;
 			productType = "com.apple.product-type.tool";
 		};
+		843F92E82497AE7200053C9F /* Lab10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843F92EF2497AE7200053C9F /* Build configuration list for PBXNativeTarget "Lab10" */;
+			buildPhases = (
+				843F92E52497AE7200053C9F /* Sources */,
+				843F92E62497AE7200053C9F /* Frameworks */,
+				843F92E72497AE7200053C9F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab10;
+			productName = Lab10;
+			productReference = 843F92E92497AE7200053C9F /* Lab10 */;
+			productType = "com.apple.product-type.tool";
+		};
 		8492FF9624926A36003F1F0F /* Lab13 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8492FF9D24926A36003F1F0F /* Build configuration list for PBXNativeTarget "Lab13" */;
@@ -453,6 +529,9 @@
 					84368E942491267F001DE432 = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					843F92E82497AE7200053C9F = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					8492FF9624926A36003F1F0F = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -484,6 +563,7 @@
 				8492FF9624926A36003F1F0F /* Lab13 */,
 				8492FFA1249280CC003F1F0F /* Lab5 */,
 				8492FFBB2493BFA9003F1F0F /* Lab9 */,
+				843F92E82497AE7200053C9F /* Lab10 */,
 			);
 		};
 /* End PBXProject section */
@@ -521,6 +601,20 @@
 				849AA73A24914C5E008867FD /* AddingQuestion.m in Sources */,
 				849AA73D24915784008867FD /* InputHandler.m in Sources */,
 				84368E9824912680001DE432 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843F92E52497AE7200053C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843F92EC2497AE7200053C9F /* main.m in Sources */,
+				843F92FF2497B97F00053C9F /* InputHandler.m in Sources */,
+				843F92F52497B38400053C9F /* StripePaymentService.m in Sources */,
+				843F93022497BFB100053C9F /* ApplePaymentService.m in Sources */,
+				843F92FB2497B3B600053C9F /* PaypalPaymentService.m in Sources */,
+				843F92F82497B39B00053C9F /* AmazonPaymentService.m in Sources */,
+				843F92F22497B2A700053C9F /* PaymentGateway.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +847,26 @@
 			};
 			name = Release;
 		};
+		843F92ED2497AE7200053C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P56BBK28XQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		843F92EE2497AE7200053C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P56BBK28XQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		8492FF9B24926A36003F1F0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -857,6 +971,15 @@
 			buildConfigurations = (
 				84368E9A24912680001DE432 /* Debug */,
 				84368E9B24912680001DE432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		843F92EF2497AE7200053C9F /* Build configuration list for PBXNativeTarget "Lab10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843F92ED2497AE7200053C9F /* Debug */,
+				843F92EE2497AE7200053C9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
