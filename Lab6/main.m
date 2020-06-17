@@ -17,9 +17,22 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         while (1) {
             NSString *answer = [InputHandler getUserInput :10 :[game getPrompt]];
-            if (answer == nil || [answer isEqualToString: @"quit"]) {
+            if (answer == nil || [answer isEqualToString: @"5"]) {
                 break;
             }
+            if (answer == nil || [answer isEqualToString: @"1"]) {
+                [game roll];
+            }
+            if (answer == nil || [answer isEqualToString: @"2"]) {
+                break;
+            }
+            if (answer == nil || [answer isEqualToString: @"3"]) {
+                break;
+            }
+            if (answer == nil || [answer isEqualToString: @"4"]) {
+                [game restart];
+            }
+
         }
     }
     return 0;
