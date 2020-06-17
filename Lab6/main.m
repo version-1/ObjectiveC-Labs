@@ -17,22 +17,33 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         while (1) {
             NSString *answer = [InputHandler getUserInput :10 :[game getPrompt]];
-            if (answer == nil || [answer isEqualToString: @"5"]) {
+            if (answer == nil || [answer isEqualToString: @"9"]) {
                 break;
             }
             if (answer == nil || [answer isEqualToString: @"1"]) {
                 [game roll];
             }
             if (answer == nil || [answer isEqualToString: @"2"]) {
-                break;
+                NSString *answer = [InputHandler getUserInput :10 :@"input hold index -->"];
+                if(![game holdDice: [answer integerValue]]) {
+                    NSLog(@"\n\n Opps input is invalid \n\n");
+                }
             }
             if (answer == nil || [answer isEqualToString: @"3"]) {
-                break;
+                NSString *answer = [InputHandler getUserInput :10 :@"input unhold index -->"];
+                if(![game unholdDice: [answer integerValue]]) {
+                    NSLog(@"\n\n Opps input is invalid \n\n");
+                }
             }
             if (answer == nil || [answer isEqualToString: @"4"]) {
+                if(![game resetHold]) {
+                    NSLog(@"\n\n Opps!!!!!! excess the reset limit\n\n");
+                }
+            }
+            if (answer == nil || [answer isEqualToString: @"5"]) {
                 [game restart];
             }
-
+            
         }
     }
     return 0;
