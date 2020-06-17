@@ -24,7 +24,7 @@
     if (_isHeld) {
         return [NSString stringWithFormat: @" *%d %@", _value + 1, dices[_value]];
     }
-    return [NSString stringWithFormat: @" %d %@", _value + 1, dices[_value]];
+    return [NSString stringWithFormat: @"  %d %@", _value + 1, dices[_value]];
 }
 
 @end

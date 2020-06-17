@@ -25,7 +25,7 @@
     NSString *dices = [self renderDices];
     NSInteger score = [self getScore];
     NSString  *lowestScore = [_scoreList count] > 0 ? [NSString stringWithFormat: @"Lowest score: %d\n", [_scoreList objectAtIndex: 0]] : @"";
-    return [NSString stringWithFormat: @"Input Menu \n1.  Roll\n 2. Hold\n 3. Unhold \n 4. New Game \n 5. Quit\n\n Score: $d \n%@ Dices: \n %@", score, lowestScore, dices];
+    return [NSString stringWithFormat: @"\n 1. Roll\n 2. Hold\n 3. Unhold \n 4. New Game \n 5. Quit\n\n Score: %d \n%@ Dices: %@", (long)score, lowestScore, dices];
 }
 
 - (NSInteger) getScore {
@@ -38,7 +38,7 @@
 }
 
 - (NSString*) renderDices {
-    NSMutableString *str = @"";
+    NSMutableString *str = [[NSMutableString alloc] init];
     for (NSInteger i = 0; i < 5; i++) {
         Dice *dice = [_dices objectAtIndex: i];
         [str appendFormat: @"%@", [dice getValue]];
