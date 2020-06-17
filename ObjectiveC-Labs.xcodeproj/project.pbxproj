@@ -18,6 +18,8 @@
 		843F92FB2497B3B600053C9F /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F92FA2497B3B600053C9F /* PaypalPaymentService.m */; };
 		843F92FF2497B97F00053C9F /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F92FE2497B97F00053C9F /* InputHandler.m */; };
 		843F93022497BFB100053C9F /* ApplePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F93012497BFB100053C9F /* ApplePaymentService.m */; };
+		843F930A249A4AF800053C9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F9309249A4AF800053C9F /* main.m */; };
+		843F9310249A4E2F00053C9F /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F930F249A4E2F00053C9F /* Dice.m */; };
 		8492FF9A24926A36003F1F0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FF9924926A36003F1F0F /* main.m */; };
 		8492FFA5249280CC003F1F0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFA4249280CC003F1F0F /* main.m */; };
 		8492FFAB24928140003F1F0F /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492FFAA24928140003F1F0F /* ScoreKeeper.m */; };
@@ -85,6 +87,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		843F9305249A4AF800053C9F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		8492FF9524926A36003F1F0F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +149,10 @@
 		843F92FE2497B97F00053C9F /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		843F93002497BFB100053C9F /* ApplePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePaymentService.h; sourceTree = "<group>"; };
 		843F93012497BFB100053C9F /* ApplePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePaymentService.m; sourceTree = "<group>"; };
+		843F9307249A4AF800053C9F /* Lab6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab6; sourceTree = BUILT_PRODUCTS_DIR; };
+		843F9309249A4AF800053C9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		843F930E249A4E2F00053C9F /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
+		843F930F249A4E2F00053C9F /* Dice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
 		8492FF9724926A36003F1F0F /* Lab13 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab13; sourceTree = BUILT_PRODUCTS_DIR; };
 		8492FF9924926A36003F1F0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8492FFA2249280CC003F1F0F /* Lab5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab5; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +229,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		843F9304249A4AF800053C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8492FF9424926A36003F1F0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,6 +270,7 @@
 				8492FFA3249280CC003F1F0F /* Lab5 */,
 				8492FFBD2493BFA9003F1F0F /* Lab9 */,
 				843F92EA2497AE7200053C9F /* Lab10 */,
+				843F9308249A4AF800053C9F /* Lab6 */,
 				84368E6E2491232A001DE432 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -263,6 +286,7 @@
 				8492FFA2249280CC003F1F0F /* Lab5 */,
 				8492FFBC2493BFA9003F1F0F /* Lab9 */,
 				843F92E92497AE7200053C9F /* Lab10 */,
+				843F9307249A4AF800053C9F /* Lab6 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -317,6 +341,16 @@
 				843F93012497BFB100053C9F /* ApplePaymentService.m */,
 			);
 			path = Lab10;
+			sourceTree = "<group>";
+		};
+		843F9308249A4AF800053C9F /* Lab6 */ = {
+			isa = PBXGroup;
+			children = (
+				843F9309249A4AF800053C9F /* main.m */,
+				843F930E249A4E2F00053C9F /* Dice.h */,
+				843F930F249A4E2F00053C9F /* Dice.m */,
+			);
+			path = Lab6;
 			sourceTree = "<group>";
 		};
 		8492FF9824926A36003F1F0F /* Lab13 */ = {
@@ -457,6 +491,23 @@
 			productReference = 843F92E92497AE7200053C9F /* Lab10 */;
 			productType = "com.apple.product-type.tool";
 		};
+		843F9306249A4AF800053C9F /* Lab6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843F930D249A4AF800053C9F /* Build configuration list for PBXNativeTarget "Lab6" */;
+			buildPhases = (
+				843F9303249A4AF800053C9F /* Sources */,
+				843F9304249A4AF800053C9F /* Frameworks */,
+				843F9305249A4AF800053C9F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab6;
+			productName = Lab6;
+			productReference = 843F9307249A4AF800053C9F /* Lab6 */;
+			productType = "com.apple.product-type.tool";
+		};
 		8492FF9624926A36003F1F0F /* Lab13 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8492FF9D24926A36003F1F0F /* Build configuration list for PBXNativeTarget "Lab13" */;
@@ -532,6 +583,9 @@
 					843F92E82497AE7200053C9F = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					843F9306249A4AF800053C9F = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					8492FF9624926A36003F1F0F = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -564,6 +618,7 @@
 				8492FFA1249280CC003F1F0F /* Lab5 */,
 				8492FFBB2493BFA9003F1F0F /* Lab9 */,
 				843F92E82497AE7200053C9F /* Lab10 */,
+				843F9306249A4AF800053C9F /* Lab6 */,
 			);
 		};
 /* End PBXProject section */
@@ -615,6 +670,15 @@
 				843F92FB2497B3B600053C9F /* PaypalPaymentService.m in Sources */,
 				843F92F82497B39B00053C9F /* AmazonPaymentService.m in Sources */,
 				843F92F22497B2A700053C9F /* PaymentGateway.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843F9303249A4AF800053C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843F9310249A4E2F00053C9F /* Dice.m in Sources */,
+				843F930A249A4AF800053C9F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,6 +931,26 @@
 			};
 			name = Release;
 		};
+		843F930B249A4AF800053C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P56BBK28XQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		843F930C249A4AF800053C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P56BBK28XQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		8492FF9B24926A36003F1F0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -980,6 +1064,15 @@
 			buildConfigurations = (
 				843F92ED2497AE7200053C9F /* Debug */,
 				843F92EE2497AE7200053C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		843F930D249A4AF800053C9F /* Build configuration list for PBXNativeTarget "Lab6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843F930B249A4AF800053C9F /* Debug */,
+				843F930C249A4AF800053C9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
