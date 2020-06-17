@@ -13,6 +13,7 @@
 {
     if (self = [super init]) {
         self.value = arc4random_uniform(6);
+        self.isHeld = false;
     }
     return self;
 }
@@ -20,7 +21,10 @@
 - (NSString*) getValue
 {
     NSArray *const dices = [[NSArray alloc] initWithObjects: @"⚀", @"⚁", @"⚂", @"⚃", @"⚄", @"⚅", nil];
-    return dices[_value];
+    if (_isHeld) {
+        return [NSString stringWithFormat: @" *%d %@", _value + 1, dices[_value]];
+    }
+    return [NSString stringWithFormat: @" %d %@", _value + 1, dices[_value]];
 }
 
 @end

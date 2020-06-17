@@ -7,18 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Dice.h";
+#import "InputHandler.h"
+#import "Dice.h"
+#import "GameController.h"
 
 int main(int argc, const char * argv[]) {
+    NSLog(@"Threelow!!");
+    GameController *game = [[GameController alloc] init];
     @autoreleasepool {
-        // insert code here...
-        NSMutableArray *dices = [[NSMutableArray alloc] init];
-        for (NSInteger i = 0; i < 5; i++) {
-            Dice *dice = [[Dice alloc] init];
-            NSLog(@"%@ %d", [dice getValue], dice.value);
-            [dices addObject:dice];
+        while (1) {
+            NSString *answer = [InputHandler getUserInput :10 :[game getPrompt]];
+            if (answer == nil || [answer isEqualToString: @"quit"]) {
+                break;
+            }
         }
-        
     }
     return 0;
 }
