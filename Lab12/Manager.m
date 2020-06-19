@@ -8,8 +8,15 @@
 
 #import "Manager.h"
 #import "Topping.h"
+#import "DeliveryService.h"
 
 @implementation Manager
+- (instancetype)init {
+    if (self = [super init] ) {
+        _deliverService = [DeliveryService new];
+    }
+    return self;
+}
 - (BOOL)kitchen:(nonnull Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size addToppings:(nonnull NSArray *)toppings {
     for (NSString *topping in toppings) {
         if ([topping isEqualToString: @"anchovies"]) {
@@ -21,6 +28,10 @@
 
 - (BOOL)shouldUpgradeOrder:(nonnull Kitchen *)kitchen {
     return false;
+}
+
+- (void)kitchenDidMakePizza:(nonnull Pizza *)pizza {
+    [_deliverService deliverPizza :pizza];
 }
 
 @end

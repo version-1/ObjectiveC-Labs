@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "KitchenDelegate.h"
+#import "DeliveryService.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Manager : NSObject<KitchenDelegate>
-
+@property DeliveryService *deliverService;
 @end
 
 NS_ASSUME_NONNULL_END

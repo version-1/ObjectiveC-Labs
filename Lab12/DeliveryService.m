@@ -7,9 +7,11 @@
 //
 
 #import "DeliveryService.h"
+#import "DeliveryCar.h"
 
 @implementation DeliveryService
 - (void) deliverPizza:(Pizza *)pizza {
-    NSLog(@"Pizza Delivered");
+    DeliveryCar *car = [DeliveryCar new];
+    [car deliverPizza: pizza];
 }
 @end

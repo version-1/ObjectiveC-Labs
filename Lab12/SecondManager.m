@@ -7,8 +7,16 @@
 //
 
 #import "SecondManager.h"
+#import "DeliveryService.h"
 
 @implementation SecondManager
+- (instancetype)init {
+    if (self = [super init] ) {
+        _deliverService = [DeliveryService new];
+    }
+    return self;
+}
+
 
 - (BOOL)kitchen:(nonnull Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size addToppings:(nonnull NSArray *)toppings {
     return true;
@@ -20,5 +28,6 @@
 
 - (void)kitchenDidMakePizza:(nonnull Pizza *)pizza {
     NSLog(@"Thank you!!");
+    [_deliverService deliverPizza :pizza];
 }
 @end
