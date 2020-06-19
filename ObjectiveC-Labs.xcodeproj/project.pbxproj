@@ -47,6 +47,12 @@
 		84A58475249D2C7C003AE11B /* Topping.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58474249D2C7C003AE11B /* Topping.m */; };
 		84A58479249D41BF003AE11B /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58478249D41BF003AE11B /* Manager.m */; };
 		84A5847C249D4372003AE11B /* SecondManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5847B249D4372003AE11B /* SecondManager.m */; };
+		84A58499249D4A2B003AE11B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58498249D4A2B003AE11B /* main.m */; };
+		84A584A6249D4AC8003AE11B /* SecondManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5849C249D4AC7003AE11B /* SecondManager.m */; };
+		84A584A7249D4AC8003AE11B /* Topping.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5849E249D4AC8003AE11B /* Topping.m */; };
+		84A584A8249D4AC8003AE11B /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A584A3249D4AC8003AE11B /* Pizza.m */; };
+		84A584A9249D4AC9003AE11B /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A584A4249D4AC8003AE11B /* Manager.m */; };
+		84A584AA249D4AC9003AE11B /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A584A5249D4AC8003AE11B /* Kitchen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -140,6 +146,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		84A5848D249D49B7003AE11B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -225,6 +240,19 @@
 		84A58478249D41BF003AE11B /* Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
 		84A5847A249D4372003AE11B /* SecondManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondManager.h; sourceTree = "<group>"; };
 		84A5847B249D4372003AE11B /* SecondManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondManager.m; sourceTree = "<group>"; };
+		84A5848F249D49B7003AE11B /* Lab12 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab12; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A58498249D4A2B003AE11B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84A5849A249D4A41003AE11B /* Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pizza.h; path = Lab12/Pizza.h; sourceTree = SOURCE_ROOT; };
+		84A5849C249D4AC7003AE11B /* SecondManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondManager.m; sourceTree = "<group>"; };
+		84A5849D249D4AC8003AE11B /* Topping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topping.h; sourceTree = "<group>"; };
+		84A5849E249D4AC8003AE11B /* Topping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topping.m; sourceTree = "<group>"; };
+		84A5849F249D4AC8003AE11B /* Kitchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
+		84A584A0249D4AC8003AE11B /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		84A584A1249D4AC8003AE11B /* SecondManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondManager.h; sourceTree = "<group>"; };
+		84A584A2249D4AC8003AE11B /* KitchenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenDelegate.h; sourceTree = "<group>"; };
+		84A584A3249D4AC8003AE11B /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
+		84A584A4249D4AC8003AE11B /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		84A584A5249D4AC8003AE11B /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +326,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84A5848C249D49B7003AE11B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -313,6 +348,7 @@
 				843F92EA2497AE7200053C9F /* Lab10 */,
 				843F9308249A4AF800053C9F /* Lab6 */,
 				84A58467249D2C40003AE11B /* Lab11 */,
+				84A58490249D49B7003AE11B /* Lab12 */,
 				84368E6E2491232A001DE432 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -330,6 +366,7 @@
 				843F92E92497AE7200053C9F /* Lab10 */,
 				843F9307249A4AF800053C9F /* Lab6 */,
 				84A58466249D2C40003AE11B /* Lab11 */,
+				84A5848F249D49B7003AE11B /* Lab12 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -467,6 +504,25 @@
 				84A58474249D2C7C003AE11B /* Topping.m */,
 			);
 			path = Lab11;
+			sourceTree = "<group>";
+		};
+		84A58490249D49B7003AE11B /* Lab12 */ = {
+			isa = PBXGroup;
+			children = (
+				84A5849F249D4AC8003AE11B /* Kitchen.h */,
+				84A584A5249D4AC8003AE11B /* Kitchen.m */,
+				84A584A2249D4AC8003AE11B /* KitchenDelegate.h */,
+				84A584A0249D4AC8003AE11B /* Manager.h */,
+				84A584A4249D4AC8003AE11B /* Manager.m */,
+				84A584A3249D4AC8003AE11B /* Pizza.m */,
+				84A584A1249D4AC8003AE11B /* SecondManager.h */,
+				84A5849C249D4AC7003AE11B /* SecondManager.m */,
+				84A5849D249D4AC8003AE11B /* Topping.h */,
+				84A5849E249D4AC8003AE11B /* Topping.m */,
+				84A5849A249D4A41003AE11B /* Pizza.h */,
+				84A58498249D4A2B003AE11B /* main.m */,
+			);
+			path = Lab12;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -642,6 +698,23 @@
 			productReference = 84A58466249D2C40003AE11B /* Lab11 */;
 			productType = "com.apple.product-type.tool";
 		};
+		84A5848E249D49B7003AE11B /* Lab12 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A58493249D49B7003AE11B /* Build configuration list for PBXNativeTarget "Lab12" */;
+			buildPhases = (
+				84A5848B249D49B7003AE11B /* Sources */,
+				84A5848C249D49B7003AE11B /* Frameworks */,
+				84A5848D249D49B7003AE11B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab12;
+			productName = Lab12;
+			productReference = 84A5848F249D49B7003AE11B /* Lab12 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -681,6 +754,9 @@
 					84A58465249D2C40003AE11B = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					84A5848E249D49B7003AE11B = {
+						CreatedOnToolsVersion = 11.5;
+					};
 				};
 			};
 			buildConfigurationList = 84368E682491232A001DE432 /* Build configuration list for PBXProject "ObjectiveC-Labs" */;
@@ -706,6 +782,7 @@
 				843F92E82497AE7200053C9F /* Lab10 */,
 				843F9306249A4AF800053C9F /* Lab6 */,
 				84A58465249D2C40003AE11B /* Lab11 */,
+				84A5848E249D49B7003AE11B /* Lab12 */,
 			);
 		};
 /* End PBXProject section */
@@ -818,6 +895,19 @@
 				84A58469249D2C40003AE11B /* main.m in Sources */,
 				84A58479249D41BF003AE11B /* Manager.m in Sources */,
 				84A58472249D2C6B003AE11B /* Kitchen.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A5848B249D49B7003AE11B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A584A8249D4AC8003AE11B /* Pizza.m in Sources */,
+				84A584A7249D4AC8003AE11B /* Topping.m in Sources */,
+				84A584AA249D4AC9003AE11B /* Kitchen.m in Sources */,
+				84A58499249D4A2B003AE11B /* main.m in Sources */,
+				84A584A9249D4AC9003AE11B /* Manager.m in Sources */,
+				84A584A6249D4AC8003AE11B /* SecondManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1133,6 +1223,26 @@
 			};
 			name = Release;
 		};
+		84A58494249D49B7003AE11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P56BBK28XQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84A58495249D49B7003AE11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P56BBK28XQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1231,6 +1341,15 @@
 			buildConfigurations = (
 				84A5846A249D2C40003AE11B /* Debug */,
 				84A5846B249D2C40003AE11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A58493249D49B7003AE11B /* Build configuration list for PBXNativeTarget "Lab12" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A58494249D49B7003AE11B /* Debug */,
+				84A58495249D49B7003AE11B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
