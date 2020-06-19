@@ -11,7 +11,15 @@
 #import "Topping.h"
 @implementation Kitchen
 - (Pizza*) makePizzaWithSize:(PizzaSize)size :(NSArray *)toppings {
-    Pizza *pizza = [[Pizza alloc] initWithSize: size];
+    if (![_delegate kitchen: self shouldMakePizzaOfSize:size addToppings:toppings]) {
+        return nil;
+    }
+    PizzaSize *_size = size;
+    if ([_delegate shouldUpgradeOrder:self ]) {
+        _size = Large;
+    }
+    
+    Pizza *pizza = [[Pizza alloc] initWithSize: _size];
     NSMutableArray *list = [NSMutableArray new];
     for (id name in toppings) {
         Topping *topping = [[Topping alloc] initWithName:name];
@@ -20,6 +28,10 @@
         }
     }
     [pizza setToppings: list];
+    
+    if( [_delegate respondsToSelector:@selector(kitchenDidMakePizza)] ) {
+        [_delegate kitchenDidMakePizza: pizza];
+    }
     return pizza;
 }
 

@@ -45,6 +45,8 @@
 		84A5846F249D2C5F003AE11B /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5846E249D2C5F003AE11B /* Pizza.m */; };
 		84A58472249D2C6B003AE11B /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58471249D2C6B003AE11B /* Kitchen.m */; };
 		84A58475249D2C7C003AE11B /* Topping.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58474249D2C7C003AE11B /* Topping.m */; };
+		84A58479249D41BF003AE11B /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58478249D41BF003AE11B /* Manager.m */; };
+		84A5847C249D4372003AE11B /* SecondManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5847B249D4372003AE11B /* SecondManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -218,6 +220,11 @@
 		84A58471249D2C6B003AE11B /* Kitchen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
 		84A58473249D2C7C003AE11B /* Topping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Topping.h; sourceTree = "<group>"; };
 		84A58474249D2C7C003AE11B /* Topping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Topping.m; sourceTree = "<group>"; };
+		84A58476249D385A003AE11B /* KitchenDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitchenDelegate.h; sourceTree = "<group>"; };
+		84A58477249D41BF003AE11B /* Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		84A58478249D41BF003AE11B /* Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		84A5847A249D4372003AE11B /* SecondManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondManager.h; sourceTree = "<group>"; };
+		84A5847B249D4372003AE11B /* SecondManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -448,9 +455,14 @@
 			children = (
 				84A58468249D2C40003AE11B /* main.m */,
 				84A5846D249D2C5F003AE11B /* Pizza.h */,
+				84A58476249D385A003AE11B /* KitchenDelegate.h */,
 				84A5846E249D2C5F003AE11B /* Pizza.m */,
 				84A58470249D2C6B003AE11B /* Kitchen.h */,
 				84A58471249D2C6B003AE11B /* Kitchen.m */,
+				84A58477249D41BF003AE11B /* Manager.h */,
+				84A5847A249D4372003AE11B /* SecondManager.h */,
+				84A5847B249D4372003AE11B /* SecondManager.m */,
+				84A58478249D41BF003AE11B /* Manager.m */,
 				84A58473249D2C7C003AE11B /* Topping.h */,
 				84A58474249D2C7C003AE11B /* Topping.m */,
 			);
@@ -801,8 +813,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A5846F249D2C5F003AE11B /* Pizza.m in Sources */,
+				84A5847C249D4372003AE11B /* SecondManager.m in Sources */,
 				84A58475249D2C7C003AE11B /* Topping.m in Sources */,
 				84A58469249D2C40003AE11B /* main.m in Sources */,
+				84A58479249D41BF003AE11B /* Manager.m in Sources */,
 				84A58472249D2C6B003AE11B /* Kitchen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

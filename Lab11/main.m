@@ -7,6 +7,8 @@
 //
 
 #import "Kitchen.h"
+#import "Manager.h"
+#import "SecondManager.h"
 
 int main(int argc, const char * argv[])
 {
@@ -15,7 +17,9 @@ int main(int argc, const char * argv[])
         
         NSLog(@"Please pick your pizza size and toppings:");
         
-        Kitchen *restaurantKitchen = [Kitchen new];
+        Kitchen *kitchen = [Kitchen new];
+        Manager *first = [Manager new];
+        SecondManager *second = [SecondManager new];
         
         while (TRUE) {
             // Loop forever
@@ -41,9 +45,17 @@ int main(int argc, const char * argv[])
                 size = Large;
             }
             
-            Pizza *pizza = [restaurantKitchen makePizzaWithSize:size :[commandWords subarrayWithRange:NSMakeRange(1, [commandWords count] - 1)]];
-            NSLog([pizza toString]);
+            kitchen.delegate = first;
+            Pizza *pizza = [kitchen makePizzaWithSize:size :[commandWords subarrayWithRange:NSMakeRange(1, [commandWords count] - 1)]];
+            if (pizza != nil) {
+              NSLog([pizza toString]);
+            }
             
+            kitchen.delegate = second;
+            pizza = [kitchen makePizzaWithSize:size :[commandWords subarrayWithRange:NSMakeRange(1, [commandWords count] - 1)]];
+            if (pizza != nil) {
+              NSLog([pizza toString]);
+            }
             // And then send some message to the kitchen...
         }
 

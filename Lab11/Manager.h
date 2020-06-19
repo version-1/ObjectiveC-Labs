@@ -1,5 +1,5 @@
 //
-//  Kitchen.h
+//  Manager.h
 //  Lab11
 //
 //  Created by Administlator on 2020/06/19.
@@ -7,12 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Pizza.h"
 #import "KitchenDelegate.h"
+NS_ASSUME_NONNULL_BEGIN
 
+@interface Manager : NSObject<KitchenDelegate>
 
-@interface Kitchen : NSObject
-
-@property (strong) id delegate;
-- (Pizza*) makePizzaWithSize: (PizzaSize) size :(NSArray *)toppings;
 @end
+
+NS_ASSUME_NONNULL_END

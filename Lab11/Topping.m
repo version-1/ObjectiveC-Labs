@@ -10,12 +10,7 @@
 
 @implementation Topping
 - (instancetype) initWithName:(NSString *)name {
-    NSArray *toppingType = @[@"ham", @"pineapple", @"cheeze"];
-    if ([toppingType containsObject:name]) {
-        _name = name;
-    } else {
-        return nil;
-    }
+    _name = name;
     return self;
 }
 @end
