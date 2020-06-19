@@ -9,5 +9,7 @@
 #import "DeliveryService.h"
 
 @implementation DeliveryService
-
+- (void) deliverPizza:(Pizza *)pizza {
+    NSLog(@"Pizza Delivered");
+}
 @end
